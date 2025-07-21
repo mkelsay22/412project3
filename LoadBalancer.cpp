@@ -58,7 +58,7 @@ bool LoadBalancer::addServer() {
     
     int serverID = static_cast<int>(servers.size()) + 1;
     std::string serverIP = "192.168.1." + std::to_string(serverID);
-    servers.push_back(std::make_unique<WebServer>(serverID, serverIP, 10));
+    servers.push_back(std::make_unique<WebServer>(serverID, serverIP, 5));
     
     return true;
 }
@@ -157,14 +157,15 @@ void LoadBalancer::checkLoadBalancing() {
     }
     
     double avgUtilization = getSystemUtilization() / 100.0; // Convert to 0-1 scale
+    int queueSize = getQueueSize();
     
-    // Add server if utilization is high
-    if (avgUtilization > loadThreshold && static_cast<int>(servers.size()) < maxServers) {
+    // Add server if utilization is high OR queue is building up
+    if ((avgUtilization > loadThreshold || queueSize > 10) && static_cast<int>(servers.size()) < maxServers) {
         addServer();
     }
     
-    // Remove server if utilization is low
-    if (avgUtilization < (loadThreshold * 0.5) && static_cast<int>(servers.size()) > minServers) {
+    // Only remove servers if utilization is extremely low and we have excess capacity
+    if (avgUtilization < (loadThreshold * 0.05) && queueSize == 0 && static_cast<int>(servers.size()) > minServers + 3) {
         removeServer();
     }
 }
@@ -217,6 +218,7 @@ double LoadBalancer::getSystemUtilization() const {
         }
     }
     
+    // Return average utilization across all active servers
     return activeServers > 0 ? totalUtilization / activeServers : 0.0;
 }
 

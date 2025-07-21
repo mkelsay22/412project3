@@ -14,7 +14,7 @@
  * 
  * Initializes a web server with default values
  */
-WebServer::WebServer() : serverID(0), serverIP("0.0.0.0"), maxCapacity(10), 
+WebServer::WebServer() : serverID(0), serverIP("0.0.0.0"), maxCapacity(5), 
                          currentLoad(0), isActive(true), totalRequestsProcessed(0), 
                          totalProcessingTime(0) {
 }

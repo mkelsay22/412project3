@@ -60,7 +60,7 @@ Request generateRandomRequest(int requestID) {
     static std::random_device rd;
     static std::mt19937 gen(rd());
     static std::uniform_int_distribution<> priorityDis(1, 10);
-    static std::uniform_int_distribution<> timeDis(5, 50);
+    static std::uniform_int_distribution<> timeDis(10, 100);
     
     int priority = priorityDis(gen);
     int processingTime = timeDis(gen);
@@ -98,8 +98,8 @@ void addRandomRequests(LoadBalancer& loadBalancer, int cycle, int maxCycles) {
     static std::mt19937 gen(rd());
     static std::uniform_int_distribution<> dis(1, 100);
     
-    // 5% chance to add a new request each cycle
-    if (dis(gen) <= 5 && cycle < maxCycles * 0.8) { // Stop adding requests near the end
+    // 15% chance to add a new request each cycle
+    if (dis(gen) <= 15 && cycle < maxCycles * 0.95) { // Stop adding requests near the end
         static int nextRequestID = 1001; // Start after initial requests
         Request newRequest = generateRandomRequest(nextRequestID++);
         
