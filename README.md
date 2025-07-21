@@ -214,21 +214,7 @@ make debug
 ./loadbalancer
 ```
 
-## Contributing
 
-This is an academic project. For educational purposes, feel free to:
-- Modify algorithms and parameters
-- Add new load balancing strategies
-- Enhance the IP blocking system
-- Improve the user interface
-
-## License
-
-This project is created for educational purposes as part of a university assignment.
-
-## Author
-
-Your Name - CSCE 412 Project 3
 
 ## Acknowledgments
 
