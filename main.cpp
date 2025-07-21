@@ -212,7 +212,7 @@ int main() {
         addRandomRequests(loadBalancer, cycle, simulationTime);
         
         // Process one cycle
-        int completed = loadBalancer.processCycle();
+        loadBalancer.processCycle();
         
         // Log statistics every 100 cycles or at the end
         if (cycle % 100 == 0 || cycle == simulationTime) {

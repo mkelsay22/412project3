@@ -9,6 +9,7 @@
 #include "LoadBalancer.h"
 #include <sstream>
 #include <algorithm>
+#include <iomanip>
 
 /**
  * @brief Default constructor
@@ -51,7 +52,7 @@ LoadBalancer::~LoadBalancer() {
  * @return True if server was added successfully, false if at maximum capacity
  */
 bool LoadBalancer::addServer() {
-    if (servers.size() >= maxServers) {
+    if (static_cast<int>(servers.size()) >= maxServers) {
         return false;
     }
     
@@ -67,7 +68,7 @@ bool LoadBalancer::addServer() {
  * @return True if server was removed successfully, false if at minimum capacity
  */
 bool LoadBalancer::removeServer() {
-    if (servers.size() <= minServers) {
+    if (static_cast<int>(servers.size()) <= minServers) {
         return false;
     }
     
@@ -126,7 +127,7 @@ void LoadBalancer::distributeRequests() {
         bool requestAssigned = false;
         
         // Try to find an available server starting from nextServerIndex
-        for (int i = 0; i < servers.size(); ++i) {
+        for (size_t i = 0; i < servers.size(); ++i) {
             int currentIndex = (serverIndex + i) % servers.size();
             
             if (servers[currentIndex]->canAcceptRequest()) {
@@ -158,12 +159,12 @@ void LoadBalancer::checkLoadBalancing() {
     double avgUtilization = getSystemUtilization() / 100.0; // Convert to 0-1 scale
     
     // Add server if utilization is high
-    if (avgUtilization > loadThreshold && servers.size() < maxServers) {
+    if (avgUtilization > loadThreshold && static_cast<int>(servers.size()) < maxServers) {
         addServer();
     }
     
     // Remove server if utilization is low
-    if (avgUtilization < (loadThreshold * 0.5) && servers.size() > minServers) {
+    if (avgUtilization < (loadThreshold * 0.5) && static_cast<int>(servers.size()) > minServers) {
         removeServer();
     }
 }
