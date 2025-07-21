@@ -1,104 +1,120 @@
 Load Balancer Simulation Log
 Servers: 10, Cycles: 10000
-Cycle    | Servers | Queue | Processed | System Util | Queue Util
----------|---------|-------|-----------|-------------|-----------
-Cycle   100 | Servers: 20 | Queue:  767 | Processed:    149 | System Util: 100.0% | Queue Util:  76.7%
-Cycle   200 | Servers: 20 | Queue:  609 | Processed:    318 | System Util: 100.0% | Queue Util:  60.9%
-Cycle   300 | Servers: 20 | Queue:  444 | Processed:    501 | System Util: 100.0% | Queue Util:  44.4%
-Cycle   400 | Servers: 20 | Queue:  272 | Processed:    691 | System Util: 100.0% | Queue Util:  27.2%
-Cycle   500 | Servers: 20 | Queue:  108 | Processed:    876 | System Util: 100.0% | Queue Util:  10.8%
-Cycle   600 | Servers: 20 | Queue:    0 | Processed:   1043 | System Util:  54.0% | Queue Util:   0.0%
-Cycle   700 | Servers: 20 | Queue:    0 | Processed:   1106 | System Util:  11.0% | Queue Util:   0.0%
-Cycle   800 | Servers: 19 | Queue:    0 | Processed:   1124 | System Util:   4.2% | Queue Util:   0.0%
-Cycle   900 | Servers: 19 | Queue:    0 | Processed:   1135 | System Util:   5.3% | Queue Util:   0.0%
-Cycle  1000 | Servers: 14 | Queue:    0 | Processed:   1148 | System Util:  10.0% | Queue Util:   0.0%
-Cycle  1100 | Servers: 14 | Queue:    0 | Processed:   1157 | System Util:  15.7% | Queue Util:   0.0%
-Cycle  1200 | Servers: 14 | Queue:    0 | Processed:   1174 | System Util:  18.6% | Queue Util:   0.0%
-Cycle  1300 | Servers: 14 | Queue:    0 | Processed:   1198 | System Util:  11.4% | Queue Util:   0.0%
-Cycle  1400 | Servers: 14 | Queue:    0 | Processed:   1211 | System Util:  10.0% | Queue Util:   0.0%
-Cycle  1500 | Servers: 14 | Queue:    0 | Processed:   1231 | System Util:  17.1% | Queue Util:   0.0%
-Cycle  1600 | Servers: 13 | Queue:    0 | Processed:   1250 | System Util:  10.8% | Queue Util:   0.0%
-Cycle  1700 | Servers: 13 | Queue:    0 | Processed:   1266 | System Util:  13.8% | Queue Util:   0.0%
-Cycle  1800 | Servers: 13 | Queue:    0 | Processed:   1282 | System Util:  15.4% | Queue Util:   0.0%
-Cycle  1900 | Servers: 13 | Queue:    0 | Processed:   1298 | System Util:   9.2% | Queue Util:   0.0%
-Cycle  2000 | Servers: 13 | Queue:    0 | Processed:   1314 | System Util:  13.8% | Queue Util:   0.0%
-Cycle  2100 | Servers: 13 | Queue:    0 | Processed:   1327 | System Util:  15.4% | Queue Util:   0.0%
-Cycle  2200 | Servers: 13 | Queue:    0 | Processed:   1347 | System Util:  13.8% | Queue Util:   0.0%
-Cycle  2300 | Servers: 13 | Queue:    0 | Processed:   1362 | System Util:  20.0% | Queue Util:   0.0%
-Cycle  2400 | Servers: 13 | Queue:    0 | Processed:   1382 | System Util:  12.3% | Queue Util:   0.0%
-Cycle  2500 | Servers:  6 | Queue:    0 | Processed:   1397 | System Util:  13.3% | Queue Util:   0.0%
-Cycle  2600 | Servers:  6 | Queue:    0 | Processed:   1408 | System Util:  36.7% | Queue Util:   0.0%
-Cycle  2700 | Servers:  6 | Queue:    0 | Processed:   1423 | System Util:  53.3% | Queue Util:   0.0%
-Cycle  2800 | Servers:  6 | Queue:    0 | Processed:   1444 | System Util:  10.0% | Queue Util:   0.0%
-Cycle  2900 | Servers:  6 | Queue:    0 | Processed:   1458 | System Util:  23.3% | Queue Util:   0.0%
-Cycle  3000 | Servers:  6 | Queue:    0 | Processed:   1468 | System Util:  26.7% | Queue Util:   0.0%
-Cycle  3100 | Servers:  6 | Queue:    0 | Processed:   1481 | System Util:  20.0% | Queue Util:   0.0%
-Cycle  3200 | Servers:  6 | Queue:    0 | Processed:   1492 | System Util:  36.7% | Queue Util:   0.0%
-Cycle  3300 | Servers:  6 | Queue:    0 | Processed:   1507 | System Util:  26.7% | Queue Util:   0.0%
-Cycle  3400 | Servers:  6 | Queue:    0 | Processed:   1520 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  3500 | Servers:  6 | Queue:    0 | Processed:   1538 | System Util:  33.3% | Queue Util:   0.0%
-Cycle  3600 | Servers:  6 | Queue:    0 | Processed:   1556 | System Util:  40.0% | Queue Util:   0.0%
-Cycle  3700 | Servers:  6 | Queue:    0 | Processed:   1575 | System Util:  20.0% | Queue Util:   0.0%
-Cycle  3800 | Servers:  6 | Queue:    0 | Processed:   1584 | System Util:  33.3% | Queue Util:   0.0%
-Cycle  3900 | Servers:  6 | Queue:    0 | Processed:   1602 | System Util:  26.7% | Queue Util:   0.0%
-Cycle  4000 | Servers:  6 | Queue:    0 | Processed:   1615 | System Util:  23.3% | Queue Util:   0.0%
-Cycle  4100 | Servers:  6 | Queue:    0 | Processed:   1627 | System Util:  33.3% | Queue Util:   0.0%
-Cycle  4200 | Servers:  6 | Queue:    0 | Processed:   1641 | System Util:  10.0% | Queue Util:   0.0%
-Cycle  4300 | Servers:  6 | Queue:    0 | Processed:   1650 | System Util:  13.3% | Queue Util:   0.0%
-Cycle  4400 | Servers:  6 | Queue:    0 | Processed:   1663 | System Util:  20.0% | Queue Util:   0.0%
-Cycle  4500 | Servers:  6 | Queue:    0 | Processed:   1671 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  4600 | Servers:  6 | Queue:    0 | Processed:   1685 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  4700 | Servers:  6 | Queue:    0 | Processed:   1700 | System Util:  13.3% | Queue Util:   0.0%
-Cycle  4800 | Servers:  4 | Queue:    0 | Processed:   1710 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  4900 | Servers:  4 | Queue:    0 | Processed:   1721 | System Util:  55.0% | Queue Util:   0.0%
-Cycle  5000 | Servers:  4 | Queue:    0 | Processed:   1738 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  5100 | Servers:  4 | Queue:    0 | Processed:   1752 | System Util:  25.0% | Queue Util:   0.0%
-Cycle  5200 | Servers:  4 | Queue:    0 | Processed:   1768 | System Util:  65.0% | Queue Util:   0.0%
-Cycle  5300 | Servers:  4 | Queue:    0 | Processed:   1791 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  5400 | Servers:  4 | Queue:    0 | Processed:   1806 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  5500 | Servers:  4 | Queue:    0 | Processed:   1818 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  5600 | Servers:  4 | Queue:    0 | Processed:   1835 | System Util:  55.0% | Queue Util:   0.0%
-Cycle  5700 | Servers:  4 | Queue:    0 | Processed:   1856 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  5800 | Servers:  4 | Queue:    0 | Processed:   1869 | System Util:  45.0% | Queue Util:   0.0%
-Cycle  5900 | Servers:  4 | Queue:    0 | Processed:   1882 | System Util:  25.0% | Queue Util:   0.0%
-Cycle  6000 | Servers:  4 | Queue:    0 | Processed:   1892 | System Util:  45.0% | Queue Util:   0.0%
-Cycle  6100 | Servers:  4 | Queue:    0 | Processed:   1906 | System Util:  15.0% | Queue Util:   0.0%
-Cycle  6200 | Servers:  4 | Queue:    0 | Processed:   1917 | System Util:  40.0% | Queue Util:   0.0%
-Cycle  6300 | Servers:  4 | Queue:    0 | Processed:   1934 | System Util:  40.0% | Queue Util:   0.0%
-Cycle  6400 | Servers:  4 | Queue:    0 | Processed:   1947 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  6500 | Servers:  4 | Queue:    0 | Processed:   1964 | System Util:  20.0% | Queue Util:   0.0%
-Cycle  6600 | Servers:  4 | Queue:    0 | Processed:   1974 | System Util:  40.0% | Queue Util:   0.0%
-Cycle  6700 | Servers:  4 | Queue:    0 | Processed:   1989 | System Util:  50.0% | Queue Util:   0.0%
-Cycle  6800 | Servers:  4 | Queue:    0 | Processed:   2007 | System Util:  40.0% | Queue Util:   0.0%
-Cycle  6900 | Servers:  4 | Queue:    0 | Processed:   2021 | System Util:  40.0% | Queue Util:   0.0%
-Cycle  7000 | Servers:  4 | Queue:    0 | Processed:   2035 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  7100 | Servers:  4 | Queue:    0 | Processed:   2049 | System Util:  55.0% | Queue Util:   0.0%
-Cycle  7200 | Servers:  4 | Queue:    0 | Processed:   2068 | System Util:  45.0% | Queue Util:   0.0%
-Cycle  7300 | Servers:  4 | Queue:    0 | Processed:   2085 | System Util:  60.0% | Queue Util:   0.0%
-Cycle  7400 | Servers:  4 | Queue:    0 | Processed:   2105 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  7500 | Servers:  4 | Queue:    0 | Processed:   2113 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  7600 | Servers:  4 | Queue:    0 | Processed:   2130 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  7700 | Servers:  4 | Queue:    0 | Processed:   2144 | System Util:  45.0% | Queue Util:   0.0%
-Cycle  7800 | Servers:  4 | Queue:    0 | Processed:   2158 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  7900 | Servers:  4 | Queue:    0 | Processed:   2168 | System Util:  25.0% | Queue Util:   0.0%
-Cycle  8000 | Servers:  4 | Queue:    0 | Processed:   2178 | System Util:  45.0% | Queue Util:   0.0%
-Cycle  8100 | Servers:  4 | Queue:    0 | Processed:   2194 | System Util:  65.0% | Queue Util:   0.0%
-Cycle  8200 | Servers:  4 | Queue:    0 | Processed:   2216 | System Util:  50.0% | Queue Util:   0.0%
-Cycle  8300 | Servers:  4 | Queue:    0 | Processed:   2233 | System Util:  60.0% | Queue Util:   0.0%
-Cycle  8400 | Servers:  4 | Queue:    0 | Processed:   2250 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  8500 | Servers:  4 | Queue:    0 | Processed:   2262 | System Util:  50.0% | Queue Util:   0.0%
-Cycle  8600 | Servers:  4 | Queue:    0 | Processed:   2281 | System Util:  55.0% | Queue Util:   0.0%
-Cycle  8700 | Servers:  4 | Queue:    0 | Processed:   2299 | System Util:  25.0% | Queue Util:   0.0%
-Cycle  8800 | Servers:  4 | Queue:    0 | Processed:   2310 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  8900 | Servers:  4 | Queue:    0 | Processed:   2324 | System Util:  65.0% | Queue Util:   0.0%
-Cycle  9000 | Servers:  4 | Queue:    0 | Processed:   2343 | System Util:  35.0% | Queue Util:   0.0%
-Cycle  9100 | Servers:  4 | Queue:    0 | Processed:   2356 | System Util:  30.0% | Queue Util:   0.0%
-Cycle  9200 | Servers:  4 | Queue:    0 | Processed:   2367 | System Util:  45.0% | Queue Util:   0.0%
-Cycle  9300 | Servers:  4 | Queue:    0 | Processed:   2382 | System Util:  25.0% | Queue Util:   0.0%
-Cycle  9400 | Servers:  4 | Queue:    0 | Processed:   2390 | System Util:  55.0% | Queue Util:   0.0%
-Cycle  9500 | Servers:  4 | Queue:    0 | Processed:   2404 | System Util:  20.0% | Queue Util:   0.0%
-Cycle  9600 | Servers:  4 | Queue:    0 | Processed:   2408 | System Util:   0.0% | Queue Util:   0.0%
-Cycle  9700 | Servers:  4 | Queue:    0 | Processed:   2408 | System Util:   0.0% | Queue Util:   0.0%
-Cycle  9800 | Servers:  4 | Queue:    0 | Processed:   2408 | System Util:   0.0% | Queue Util:   0.0%
-Cycle  9900 | Servers:  4 | Queue:    0 | Processed:   2408 | System Util:   0.0% | Queue Util:   0.0%
-Cycle 10000 | Servers:  4 | Queue:    0 | Processed:   2408 | System Util:   0.0% | Queue Util:   0.0%
+Task Time Range: 10-100 clock cycles
+Starting Queue Size: 1000 requests
+Dynamic Scaling: Enabled (80% threshold for scale up, 40% for scale down)
+Request Types: GET, POST, PUT, DELETE
+Priority Levels: 1-10
+Server Capacity: 10 concurrent requests per server
+----------------------------------------
+Cycle    | Servers | Queue | Processed | System Util | Queue Util | Active | Inactive | Rejected
+---------|---------|-------|-----------|-------------|-----------|--------|----------|---------
+Cycle   100 | Servers: 20 | Queue:  780 | Processed:    134 | System Util: 100.0% | Queue Util:  78.0% | Active: 20 | Inactive:  0 | Rejected:  0
+Cycle   200 | Servers: 20 | Queue:  617 | Processed:    308 | System Util: 100.0% | Queue Util:  61.7% | Active: 20 | Inactive:  0 | Rejected:  0
+Cycle   300 | Servers: 20 | Queue:  443 | Processed:    495 | System Util: 100.0% | Queue Util:  44.3% | Active: 20 | Inactive:  0 | Rejected:  0
+Cycle   400 | Servers: 20 | Queue:  263 | Processed:    686 | System Util: 100.0% | Queue Util:  26.3% | Active: 20 | Inactive:  0 | Rejected:  0
+Cycle   500 | Servers: 20 | Queue:  104 | Processed:    858 | System Util: 100.0% | Queue Util:  10.4% | Active: 20 | Inactive:  0 | Rejected:  0
+Cycle   600 | Servers: 20 | Queue:    0 | Processed:   1029 | System Util:  49.0% | Queue Util:   0.0% | Active: 20 | Inactive:  0 | Rejected:  0
+Cycle   700 | Servers: 19 | Queue:    0 | Processed:   1083 | System Util:   5.3% | Queue Util:   0.0% | Active: 19 | Inactive:  0 | Rejected:  0
+Cycle   800 | Servers: 19 | Queue:    0 | Processed:   1093 | System Util:   9.5% | Queue Util:   0.0% | Active: 19 | Inactive:  0 | Rejected:  0
+Cycle   900 | Servers: 18 | Queue:    0 | Processed:   1106 | System Util:  11.1% | Queue Util:   0.0% | Active: 18 | Inactive:  0 | Rejected:  0
+Cycle  1000 | Servers: 18 | Queue:    0 | Processed:   1119 | System Util:  10.0% | Queue Util:   0.0% | Active: 18 | Inactive:  0 | Rejected:  0
+Cycle  1100 | Servers: 18 | Queue:    0 | Processed:   1133 | System Util:   5.6% | Queue Util:   0.0% | Active: 18 | Inactive:  0 | Rejected:  0
+Cycle  1200 | Servers: 18 | Queue:    0 | Processed:   1148 | System Util:  12.2% | Queue Util:   0.0% | Active: 18 | Inactive:  0 | Rejected:  0
+Cycle  1300 | Servers: 18 | Queue:    0 | Processed:   1165 | System Util:  13.3% | Queue Util:   0.0% | Active: 18 | Inactive:  0 | Rejected:  0
+Cycle  1400 | Servers: 18 | Queue:    0 | Processed:   1187 | System Util:  16.7% | Queue Util:   0.0% | Active: 18 | Inactive:  0 | Rejected:  0
+Cycle  1500 | Servers: 16 | Queue:    0 | Processed:   1207 | System Util:  13.8% | Queue Util:   0.0% | Active: 16 | Inactive:  0 | Rejected:  0
+Cycle  1600 | Servers: 16 | Queue:    0 | Processed:   1225 | System Util:   8.8% | Queue Util:   0.0% | Active: 16 | Inactive:  0 | Rejected:  0
+Cycle  1700 | Servers: 16 | Queue:    0 | Processed:   1240 | System Util:   7.5% | Queue Util:   0.0% | Active: 16 | Inactive:  0 | Rejected:  0
+Cycle  1800 | Servers: 16 | Queue:    0 | Processed:   1253 | System Util:  10.0% | Queue Util:   0.0% | Active: 16 | Inactive:  0 | Rejected:  0
+Cycle  1900 | Servers: 16 | Queue:    0 | Processed:   1271 | System Util:  12.5% | Queue Util:   0.0% | Active: 16 | Inactive:  0 | Rejected:  0
+Cycle  2000 | Servers: 14 | Queue:    0 | Processed:   1284 | System Util:   8.6% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2100 | Servers: 14 | Queue:    0 | Processed:   1295 | System Util:  18.6% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2200 | Servers: 14 | Queue:    0 | Processed:   1311 | System Util:  11.4% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2300 | Servers: 14 | Queue:    0 | Processed:   1326 | System Util:  11.4% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2400 | Servers: 14 | Queue:    0 | Processed:   1336 | System Util:   8.6% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2500 | Servers: 14 | Queue:    0 | Processed:   1349 | System Util:   5.7% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2600 | Servers: 14 | Queue:    0 | Processed:   1355 | System Util:  14.3% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2700 | Servers: 14 | Queue:    0 | Processed:   1371 | System Util:  12.9% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2800 | Servers: 14 | Queue:    0 | Processed:   1386 | System Util:   7.1% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  2900 | Servers: 14 | Queue:    0 | Processed:   1401 | System Util:   8.6% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  3000 | Servers: 14 | Queue:    0 | Processed:   1415 | System Util:  12.9% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  3100 | Servers: 14 | Queue:    0 | Processed:   1433 | System Util:  10.0% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  3200 | Servers: 14 | Queue:    0 | Processed:   1449 | System Util:  10.0% | Queue Util:   0.0% | Active: 14 | Inactive:  0 | Rejected:  0
+Cycle  3300 | Servers:  4 | Queue:    0 | Processed:   1456 | System Util:  15.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  3400 | Servers:  4 | Queue:    0 | Processed:   1463 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  3500 | Servers:  4 | Queue:    0 | Processed:   1478 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  3600 | Servers:  4 | Queue:    0 | Processed:   1496 | System Util:  55.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  3700 | Servers:  4 | Queue:    0 | Processed:   1515 | System Util:  25.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  3800 | Servers:  4 | Queue:    0 | Processed:   1528 | System Util:  35.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  3900 | Servers:  4 | Queue:    0 | Processed:   1544 | System Util:  25.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4000 | Servers:  4 | Queue:    0 | Processed:   1556 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4100 | Servers:  4 | Queue:    0 | Processed:   1574 | System Util:  20.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4200 | Servers:  4 | Queue:    0 | Processed:   1579 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4300 | Servers:  4 | Queue:    0 | Processed:   1594 | System Util:  50.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4400 | Servers:  4 | Queue:    0 | Processed:   1611 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4500 | Servers:  4 | Queue:    0 | Processed:   1625 | System Util:  25.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4600 | Servers:  4 | Queue:    0 | Processed:   1639 | System Util:  25.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4700 | Servers:  4 | Queue:    0 | Processed:   1651 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4800 | Servers:  4 | Queue:    0 | Processed:   1661 | System Util:  75.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  4900 | Servers:  4 | Queue:    0 | Processed:   1681 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5000 | Servers:  4 | Queue:    0 | Processed:   1690 | System Util:  60.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5100 | Servers:  4 | Queue:    0 | Processed:   1711 | System Util:  35.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5200 | Servers:  4 | Queue:    0 | Processed:   1723 | System Util:  50.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5300 | Servers:  4 | Queue:    0 | Processed:   1735 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5400 | Servers:  4 | Queue:    0 | Processed:   1749 | System Util:  50.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5500 | Servers:  4 | Queue:    0 | Processed:   1762 | System Util:  15.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5600 | Servers:  4 | Queue:    0 | Processed:   1771 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5700 | Servers:  4 | Queue:    0 | Processed:   1784 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5800 | Servers:  4 | Queue:    0 | Processed:   1796 | System Util:  25.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  5900 | Servers:  4 | Queue:    0 | Processed:   1812 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6000 | Servers:  4 | Queue:    0 | Processed:   1826 | System Util:  15.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6100 | Servers:  4 | Queue:    0 | Processed:   1838 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6200 | Servers:  4 | Queue:    0 | Processed:   1852 | System Util:  15.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6300 | Servers:  4 | Queue:    0 | Processed:   1862 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6400 | Servers:  4 | Queue:    0 | Processed:   1882 | System Util:  60.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6500 | Servers:  4 | Queue:    0 | Processed:   1902 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6600 | Servers:  4 | Queue:    0 | Processed:   1918 | System Util:  55.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6700 | Servers:  4 | Queue:    0 | Processed:   1935 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6800 | Servers:  4 | Queue:    0 | Processed:   1950 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  6900 | Servers:  4 | Queue:    0 | Processed:   1963 | System Util:  55.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7000 | Servers:  4 | Queue:    0 | Processed:   1980 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7100 | Servers:  4 | Queue:    0 | Processed:   1993 | System Util:  70.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7200 | Servers:  4 | Queue:    0 | Processed:   2014 | System Util:  65.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7300 | Servers:  4 | Queue:    0 | Processed:   2036 | System Util:  50.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7400 | Servers:  4 | Queue:    0 | Processed:   2049 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7500 | Servers:  4 | Queue:    0 | Processed:   2066 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7600 | Servers:  4 | Queue:    0 | Processed:   2079 | System Util:  35.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7700 | Servers:  4 | Queue:    0 | Processed:   2093 | System Util:  10.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7800 | Servers:  4 | Queue:    0 | Processed:   2103 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  7900 | Servers:  4 | Queue:    0 | Processed:   2115 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8000 | Servers:  4 | Queue:    0 | Processed:   2128 | System Util:  60.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8100 | Servers:  4 | Queue:    0 | Processed:   2146 | System Util:  60.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8200 | Servers:  4 | Queue:    0 | Processed:   2165 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8300 | Servers:  4 | Queue:    0 | Processed:   2178 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8400 | Servers:  4 | Queue:    0 | Processed:   2195 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8500 | Servers:  4 | Queue:    0 | Processed:   2210 | System Util:  65.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8600 | Servers:  4 | Queue:    0 | Processed:   2229 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8700 | Servers:  4 | Queue:    0 | Processed:   2246 | System Util:  30.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8800 | Servers:  4 | Queue:    0 | Processed:   2258 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  8900 | Servers:  4 | Queue:    0 | Processed:   2269 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9000 | Servers:  4 | Queue:    0 | Processed:   2284 | System Util:  40.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9100 | Servers:  4 | Queue:    0 | Processed:   2297 | System Util:  55.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9200 | Servers:  4 | Queue:    0 | Processed:   2311 | System Util:  20.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9300 | Servers:  4 | Queue:    0 | Processed:   2321 | System Util:  45.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9400 | Servers:  4 | Queue:    0 | Processed:   2334 | System Util:  75.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9500 | Servers:  4 | Queue:    0 | Processed:   2352 | System Util:  60.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9600 | Servers:  4 | Queue:    0 | Processed:   2364 | System Util:   0.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9700 | Servers:  4 | Queue:    0 | Processed:   2364 | System Util:   0.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9800 | Servers:  4 | Queue:    0 | Processed:   2364 | System Util:   0.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle  9900 | Servers:  4 | Queue:    0 | Processed:   2364 | System Util:   0.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+Cycle 10000 | Servers:  4 | Queue:    0 | Processed:   2364 | System Util:   0.0% | Queue Util:   0.0% | Active:  4 | Inactive:  0 | Rejected:  0
+----------------------------------------
+ENDING QUEUE SIZE: 0 requests
+FINAL STATUS:
+- Total requests processed: 2364
+- Average processing time: 0.00 cycles
+- Final system utilization: 0.0%
+- Final active servers: 4
+- Remaining requests in queue: 0
+- Rejected/discarded requests: 0

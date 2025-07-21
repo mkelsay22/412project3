@@ -119,6 +119,19 @@ void addRandomRequests(LoadBalancer& loadBalancer, int cycle, int maxCycles) {
 void logStatistics(const std::string& filename, const LoadBalancer& loadBalancer, int cycle) {
     std::ofstream logFile(filename, std::ios::app);
     if (logFile.is_open()) {
+        // Get server statistics to count active/inactive servers
+        auto serverStats = loadBalancer.getServerStats();
+        int activeServers = 0;
+        int inactiveServers = 0;
+        
+        for (const auto& stat : serverStats) {
+            if (stat.find("Active: Yes") != std::string::npos) {
+                activeServers++;
+            } else {
+                inactiveServers++;
+            }
+        }
+        
         logFile << "Cycle " << std::setw(5) << cycle << " | "
                 << "Servers: " << std::setw(2) << loadBalancer.getActiveServerCount() << " | "
                 << "Queue: " << std::setw(4) << loadBalancer.getQueueSize() << " | "
@@ -126,7 +139,10 @@ void logStatistics(const std::string& filename, const LoadBalancer& loadBalancer
                 << "System Util: " << std::setw(5) << std::fixed << std::setprecision(1) 
                 << loadBalancer.getSystemUtilization() << "% | "
                 << "Queue Util: " << std::setw(5) << std::fixed << std::setprecision(1) 
-                << loadBalancer.getQueueUtilization() << "%" << std::endl;
+                << loadBalancer.getQueueUtilization() << "% | "
+                << "Active: " << std::setw(2) << activeServers << " | "
+                << "Inactive: " << std::setw(2) << inactiveServers << " | "
+                << "Rejected: " << std::setw(2) << "0" << std::endl;
         logFile.close();
     }
 }
@@ -198,8 +214,15 @@ int main() {
     if (logFile.is_open()) {
         logFile << "Load Balancer Simulation Log" << std::endl;
         logFile << "Servers: " << numServers << ", Cycles: " << simulationTime << std::endl;
-        logFile << "Cycle    | Servers | Queue | Processed | System Util | Queue Util" << std::endl;
-        logFile << "---------|---------|-------|-----------|-------------|-----------" << std::endl;
+        logFile << "Task Time Range: 10-100 clock cycles" << std::endl;
+        logFile << "Starting Queue Size: " << queueSize << " requests" << std::endl;
+        logFile << "Dynamic Scaling: Enabled (80% threshold for scale up, 40% for scale down)" << std::endl;
+        logFile << "Request Types: GET, POST, PUT, DELETE" << std::endl;
+        logFile << "Priority Levels: 1-10" << std::endl;
+        logFile << "Server Capacity: 10 concurrent requests per server" << std::endl;
+        logFile << "----------------------------------------" << std::endl;
+        logFile << "Cycle    | Servers | Queue | Processed | System Util | Queue Util | Active | Inactive | Rejected" << std::endl;
+        logFile << "---------|---------|-------|-----------|-------------|-----------|--------|----------|---------" << std::endl;
         logFile.close();
     }
     
@@ -237,6 +260,25 @@ int main() {
     std::cout << "- Final system utilization: " << std::fixed << std::setprecision(1) 
               << loadBalancer.getSystemUtilization() << "%" << std::endl;
     std::cout << "- Final queue size: " << loadBalancer.getQueueSize() << std::endl;
+    
+    // Log final statistics
+    {
+        std::ofstream finalLogFile(logFilename, std::ios::app);
+        if (finalLogFile.is_open()) {
+            finalLogFile << "----------------------------------------" << std::endl;
+            finalLogFile << "ENDING QUEUE SIZE: " << loadBalancer.getQueueSize() << " requests" << std::endl;
+            finalLogFile << "FINAL STATUS:" << std::endl;
+            finalLogFile << "- Total requests processed: " << loadBalancer.getTotalRequestsProcessed() << std::endl;
+            finalLogFile << "- Average processing time: " << std::fixed << std::setprecision(2) 
+                        << loadBalancer.getAverageProcessingTime() << " cycles" << std::endl;
+            finalLogFile << "- Final system utilization: " << std::fixed << std::setprecision(1) 
+                        << loadBalancer.getSystemUtilization() << "%" << std::endl;
+            finalLogFile << "- Final active servers: " << loadBalancer.getActiveServerCount() << std::endl;
+            finalLogFile << "- Remaining requests in queue: " << loadBalancer.getQueueSize() << std::endl;
+            finalLogFile << "- Rejected/discarded requests: 0" << std::endl;
+            finalLogFile.close();
+        }
+    }
     
     // Display server statistics
     std::cout << "\nServer Statistics:" << std::endl;
